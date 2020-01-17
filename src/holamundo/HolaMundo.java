@@ -5,6 +5,8 @@
  */
 package holamundo;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Dario
@@ -17,12 +19,25 @@ public class HolaMundo {
     
     private String nombre;
     
+    public HolaMundo(){
+        
+    }
+    
     public String getNombre(){
         return nombre = "Darío Quichimbo";
     }
     
+    public String Edad(int edad){
+        edad = 2000;
+        String resultado = "";
+        Calendar calendar = Calendar.getInstance();
+        calendar.getWeekYear();
+        return resultado;
+    }
+    
     public static void main(String[] args) {
-        System.out.println(new HolaMundo().getNombre());
+        HolaMundo HM = new HolaMundo();
+        System.out.println("Mi nombre es: "+HM.getNombre());
     }
     
 }
