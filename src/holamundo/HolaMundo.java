@@ -14,8 +14,15 @@ public class HolaMundo {
     /**
      * @param args the command line arguments
      */
+    
+    private String nombre;
+    
+    public String getNombre(){
+        return nombre = "Darío Quichimbo";
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(new HolaMundo().getNombre());
     }
     
 }
